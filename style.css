@@ -1,0 +1,62 @@
+*{
+    list-style: none;
+    
+}
+.contaner{
+    width: 100%;
+
+margin-top:30px;
+}
+
+#tab-parent{
+  width: 90%;
+  border: 1px solid black;
+  margin-left: 5%;
+    
+    display: flex;
+    justify-content: space-around;
+  align-items: center;
+
+}
+#tab-parent li {
+    border: 2px solid;
+    padding: 20px;
+    background-color: aqua;
+}
+.child {
+ width: 90%;
+ margin-left: 5%;
+
+background-color: gray;
+    padding: 20px;
+    border: 1px solid black;
+   opacity: 0;
+   visibility: hidden;
+  transform-origin:top;
+    position:absolute;
+    left:  -100px;
+    top: 0px;
+    transition: 1s;
+    transform: scale(0);
+  
+}
+
+.parent {
+    position: relative;
+}
+.active {
+    background-color: red !important;
+    color: white;
+    
+}
+.open{
+    visibility: visible;
+    opacity: 1 !important;
+    background-color: aliceblue;
+    color: rgb(68, 72, 75);
+ transform: scale(1);
+left: 0px;
+}
+h1{
+    margin-left: 600px;
+}
